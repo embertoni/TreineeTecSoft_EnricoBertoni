@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main-titulo {
+    background-color: #1d1d1d;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+    border-bottom: 2px solid #333;
+    color: white;
+    font-size: 36px;
+}
+
+#indice-list {
+    color: white;
+}
+
+#indice-list a {
+    color: white;
+    text-decoration: none;
+}
+
+#indice-list a:hover {
+    text-decoration: underline;
+}
+
+.sub-titulo {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.sub-titulo-box {
+    background-color: #1d1d1d;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: max-content;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.nav-container {
+    background-color: #1d1d1d;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.biografia {
+    background-color: #1d1d1d;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+    height: auto;
+    gap: 40px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.biografia p {
+    max-width: 800px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.biografia img {
+    width: 225px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.grid-discografia {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-disco-item {
+    background-color: #1d1d1d;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-disco-item p {
+    font-size: 16px;
+}
+
+.grid-disco-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.grid-disco-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid-disco-item a:hover {
+    text-decoration: underline;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    justify-items: stretch;
+    align-items: start;
+}
+
+.grid-info > * {
+    background-color: #1d1d1d;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.them-footer, .self-footer {
+    background-color: #1d1d1d;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.them-footer p, .self-footer p {
+    margin: 0;
+    text-align: left;
+}
+
+.them-footer button, .self-footer button {
+    padding: 10px 20px;
+    background-color: #cacaca;
+    color: black;
+    border: 2px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.them-footer button {
+    min-width: 150px;
+}
+
+.them-footer button:hover, .self-footer button:hover {
+    background-color: #b0b0b0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .biografia {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .grid-discografia, .grid-info {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .sub-titulo-box {
+        width: auto;
+        display: block;
+        margin: 20px 5%;
+    }
+
+    .them-footer, .self-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .them-footer p, .self-footer p {
+        text-align: center;
+    }
+}
